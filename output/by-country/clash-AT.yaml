@@ -25,6 +25,14 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: qq
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 86.106.119.23
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: gr.freeguard.org
+  skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
   server: 45.86.245.107
   port: 5865
   udp: true
@@ -37,21 +45,6 @@ proxies:
     short-id: a4f7c2e91b6d8035
   servername: ru.vkroom-it-service.xyz
   client-fingerprint: chrome
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: 91.186.218.227
-  port: 4443
-  udp: true
-  type: vless
-  uuid: d548eca0-3f96-4967-922b-d612b792f125
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
