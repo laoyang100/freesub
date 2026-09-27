@@ -6,31 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.179.82",
+      "server": "104.21.55.123",
       "server_port": 443,
-      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
+      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
       "tls": {
         "enabled": true,
-        "server_name": "1-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/8qMLgNapWf6SBxo8fhQlVPYO",
-        "headers": {
-          "Host": "1-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "172.67.179.82",
-      "server_port": 443,
-      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
-      "tls": {
-        "enabled": true,
-        "server_name": "1-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr",
+        "server_name": "restless-boat-ebf2.moha102030.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -39,52 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/8qMLgNapWf6SBxo8fhQlVPYO",
+        "path": "/sync",
         "headers": {
-          "Host": "1-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
-      "server": "172.67.179.82",
-      "server_port": 443,
-      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
-      "tls": {
-        "enabled": true,
-        "server_name": "0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/8qMLgNapWf6SBxo8fhQlVPYO",
-        "headers": {
-          "Host": "0-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
-      "server": "chatgpt.com",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "restless-boat-ebf2.moha102030.workers.dev"
         }
       }
     },
@@ -93,20 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe",
-        "🌐 其他地区 (Other) 03 - xiaohe",
-        "🌐 其他地区 (Other) 04 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe",
-        "🌐 其他地区 (Other) 03 - xiaohe",
-        "🌐 其他地区 (Other) 04 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
