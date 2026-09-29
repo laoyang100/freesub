@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.10.197
+  server: 104.17.104.7
   port: 443
   udp: true
   type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
-  servername: a.cwvps.eu.org
+  servername: 77yku.ngw0.4j6.hh.vavava.kdns.fr
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560
     headers:
-      Host: a.cwvps.eu.org
+      Host: 77yku.ngw0.4j6.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
