@@ -10,18 +10,9 @@ proxies:
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  sni: 109.206.241.10
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -30,8 +21,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: ee10.zazazuza.ru
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 194.26.141.148
   port: 8443
   udp: true
   type: vless
@@ -39,12 +30,25 @@ proxies:
   tls: true
   servername: fdghyt.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 150.241.74.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TJ3ltW_Xa1x5bn7bY3jx2mpirm0GHOskSSG88Ft68CA
+    short-id: 46641eff6d03ffb1
+  servername: sh-ee-01.mintrocket.org
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
