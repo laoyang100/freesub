@@ -5,29 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.158.146
-  port: 2052
+  server: 172.64.154.8
+  port: 2095
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: ef105858-tmm5c0-tt2yf5-1j61y.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-  sni: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  sni: ef105858-tmm5c0-tt2yf5-1j61y.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 273d1420-tmm5c0-tug19l-1go3q.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+  sni: 273d1420-tmm5c0-tug19l-1go3q.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 118.167.235.241
@@ -39,47 +41,42 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  server: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
-  port: 443
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
   type: hysteria2
-  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-  sni: 59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: ttww11.bpca2026.top
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
+  server: 178.83.46.216
+  port: 2053
   udp: true
-  type: trojan
-  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
-  sni: ttww11.bpca2026.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /images
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
