@@ -20,8 +20,20 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -30,7 +42,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -40,8 +52,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "87.251.17.11",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
       "server": "151.241.137.132",
       "server_port": 443,
       "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
@@ -51,7 +75,7 @@
         "server_name": "finland.ali-bard.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -62,7 +86,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
       "server": "144.31.27.215",
       "server_port": 43000,
       "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
@@ -72,7 +96,7 @@
         "server_name": "144.31.27.215",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -82,91 +106,45 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
-      "server": "91.103.140.187",
-      "server_port": 443,
-      "uuid": "698b212d-ca12-4794-8256-252a6e1b4533",
-      "tls": {
-        "enabled": true,
-        "server_name": "q4x8.vpnpolar.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/beeline",
-        "headers": {
-          "Host": "q4x8.vpnpolar.online"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaohe",
-      "server": "i.wareznet.ru",
-      "server_port": 8446,
-      "password": "d402d4c0b8354a90b70bb2566dce9a08",
-      "tls": {
-        "enabled": true,
-        "server_name": "i.wareznet.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaohe",
-      "server": "cdn.bulkavpn.top",
-      "server_port": 443,
-      "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.bulkavpn.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU",
-          "short_id": "94f32cfc"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - xiaohe",
-      "server": "i.wareznet.ru",
-      "server_port": 8443,
-      "password": "d402d4c0b8354a90b70bb2566dce9a08",
-      "tls": {
-        "enabled": true,
-        "server_name": "i.wareznet.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaohe",
       "server": "45.149.114.171",
       "server_port": 777,
       "method": "chacha20-ietf-poly1305",
       "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - xiaohe",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - xiaohe",
+      "server": "psf-3.weedly.top",
+      "server_port": 80,
+      "uuid": "b0fae3b7-02de-4002-b8ca-b7159fe33841",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "machinemag.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - xiaohe",
+      "server": "van2.ragnarok-it.xyz",
+      "server_port": 8446,
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
+          "short_id": "7bac4b112d30d1"
+        }
       }
     },
     {
@@ -183,8 +161,7 @@
         "🇫🇮 芬兰 (Finland) 07 - xiaohe",
         "🇫🇮 芬兰 (Finland) 08 - xiaohe",
         "🇫🇮 芬兰 (Finland) 09 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 10 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 11 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 10 - xiaohe"
       ]
     },
     {
@@ -200,8 +177,7 @@
         "🇫🇮 芬兰 (Finland) 07 - xiaohe",
         "🇫🇮 芬兰 (Finland) 08 - xiaohe",
         "🇫🇮 芬兰 (Finland) 09 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 10 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 11 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

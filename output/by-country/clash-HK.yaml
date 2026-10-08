@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 43.161.230.103
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
@@ -28,38 +12,48 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: httpst.mewangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: 130.94.33.80
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 45.207.157.8
+  port: 9443
   udp: true
   type: vless
-  uuid: 218ae360-0e5f-4856-91f3-1823adfc9037
+  uuid: cbe82d99-2927-49d2-8ea9-d0d0162a60ec
+  flow: xtls-rprx-vision
   tls: true
-  servername: hk.sepporated.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: hk.sepporated.com
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 45.207.156.198
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   server: jumpernode.site
   port: 443
   udp: true
@@ -72,15 +66,20 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 38.180.188.178
+  port: 9443
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  type: vless
+  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   server: strong-haddock.rooster465.autos
   port: 443
   udp: true
@@ -88,6 +87,14 @@ proxies:
   password: UX82473651
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -105,15 +112,13 @@ proxies:
     headers:
       Host: jmp1.907737.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  server: nas.aizhzo.com
-  port: 5010
+  server: 43.161.230.103
+  port: 8443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,46 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.3.219
-  port: 443
+  server: or3.sfacg.uk
+  port: 2083
   udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: cdn.sfacg.uk
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /or3
     headers:
-      Host: ccs2g.pai50288.uk
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.21.3.219
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
 rules:
 - MATCH,PROXIES
